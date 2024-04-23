@@ -16,7 +16,7 @@ jobs:
       - name: Build JRE JAR files
         run: |
           # Build JRE JAR files (security manager, etc...)
-          gradle :jre_lwjgl3glfw:build --no-daemon
+          gradle :jre_lwjgl3glfw:build --no-daemon --warning-mode all
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
