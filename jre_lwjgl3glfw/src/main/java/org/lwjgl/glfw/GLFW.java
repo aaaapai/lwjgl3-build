@@ -1031,7 +1031,6 @@ public class GLFW
     }
 
     public static void glfwSetWindowSizeLimits(@NativeType("GLFWwindow *") long window, int minwidth, int minheight, int maxwidth, int maxheight) {
-
     }
 
     public static void glfwSetWindowPos(long window, int x, int y) {
