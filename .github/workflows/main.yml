@@ -13,6 +13,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4.2.1
+        with:
+          distribution: temurin
+          java-version: 21
       - name: Build JRE JAR files
         run: |
           # Build JRE JAR files (security manager, etc...)
