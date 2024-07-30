@@ -12,11 +12,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Setup Java JDK
-        uses: actions/setup-java@v4.2.1
-        with:
-          distribution: temurin
-          java-version: 21
       - name: Build JRE JAR files
         run: |
           # Build JRE JAR files (security manager, etc...)
